@@ -1,0 +1,126 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace HW_5
+{
+    class ExpressionParserTree : BinarySearchTree<string>
+    {
+        public ExpressionParserTree(string form)
+        {
+            CreateTree(form);
+        }
+
+        public void CreateTree(string formula)
+        {
+            string[] formulaArray = formula.Split();
+            //PEMDAS
+            //parentheses, exponent, multiplication, division, addition, subtraction
+
+            int n, currentOperationNum = -1, previousOperationNum = -1;
+            Node<string> leftChildOperand, rightChildOperand, parentOperator;
+            Stack<Node<string>> operands = new Stack<Node<string>>();
+            Stack<Node<string>> operators = new Stack<Node<string>>();
+
+            for (int i = 0; i < formulaArray.Length; i++)
+            {
+                Node<string> newNode = new Node<string> { Value = formulaArray[i], leftChild = null, rightChild = null };
+
+                if (int.TryParse(newNode.Value, out n)) // tests if the node's value is an integer or not
+                    operands.Push(newNode);
+                else
+                {
+                    switch (newNode.Value)
+                    {
+                        case "+":
+                            currentOperationNum = 0;
+                            break;
+                        case "-":
+                            currentOperationNum = 1;
+                            break;
+                        case "*":
+                            currentOperationNum = 2;
+                            break;
+                        case "/":
+                            currentOperationNum = 3;
+                            break;
+                        case "^":
+                            currentOperationNum = 4;
+                            break;
+                    }
+
+                    if (previousOperationNum == -1)
+                        previousOperationNum = currentOperationNum;
+                    else if (currentOperationNum <= previousOperationNum)
+                    {
+                        rightChildOperand = operands.Pop();
+                        leftChildOperand = operands.Pop();
+
+                        parentOperator = operators.Pop();
+
+                        parentOperator.rightChild = rightChildOperand;
+                        parentOperator.leftChild = leftChildOperand;
+
+                        operands.Push(parentOperator);
+                        
+                    }
+                    previousOperationNum = currentOperationNum;
+                    operators.Push(newNode);
+
+                }
+            }
+            while(operators.Count > 0)
+            {
+                rightChildOperand = operands.Pop();
+                leftChildOperand = operands.Pop();
+
+                parentOperator = operators.Pop();
+
+                parentOperator.rightChild = rightChildOperand;
+                parentOperator.leftChild = leftChildOperand;
+
+                operands.Push(parentOperator);
+            }
+            rootNode = operands.Pop();
+        }
+        public int Evaluate()
+        {
+            IEnumerator<string> expresssionTreeEnum = TraversePost();
+            int result = 0, n;
+            Stack <int> numberStack = new Stack<int>();
+
+            while (expresssionTreeEnum.MoveNext() == true)
+            {
+                if (int.TryParse(expresssionTreeEnum.Current, out n))
+                    numberStack.Push(int.Parse(expresssionTreeEnum.Current));
+                else
+                {
+                    int num1 = numberStack.Pop();
+                    int num2 = numberStack.Pop();
+                    switch(expresssionTreeEnum.Current)
+                    {
+                        case "^":
+                            numberStack.Push((int)Math.Pow(num2, num1));
+                            break;
+                        case "*":
+                            numberStack.Push(num2 * num1);
+                            break;
+                        case "/":
+                            numberStack.Push(num2 / num1);
+                            break;
+                        case "+":
+                            numberStack.Push(num2 + num1);
+                            break;
+                        case "-":
+                            numberStack.Push(num2 - num1);
+                            break;
+                    }
+                }
+            }
+            result = numberStack.Pop();
+            return result;
+        }
+    }
+}

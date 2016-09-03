@@ -1,0 +1,44 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<!--
+  <div class="jumbotron">
+    <h1>ASP.NET</h1>
+    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
+    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>  
+-->
+<head>
+    <title>People List Application</title>
+</head>
+<body>
+    <h1 class="title">List Of People</h1>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script> 
+    <div class="page">
+        <input id="Text1" type="text" />
+        <input id="Submit1" type="submit" value="submit" />
+        <table class="peopleTable">
+            <tr>
+                <th>Photo</th>
+                <th>ID Number</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Address</th>
+                <th>Interests</th>
+            </tr>
+            @foreach(var obj in ViewBag.Customers)
+            {
+                <tr>
+                    <th>obj.Photo</th>
+                    <th>obj.ID</th>
+                    <th>obj.Name</th>
+                    <th>obj.Age</th>
+                    <th>obj.Address</th>
+                    <th>obj.Interests</th>
+                </tr>
+                
+            }
+        </table>
+    </div>
+</body>

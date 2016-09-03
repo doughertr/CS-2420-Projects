@@ -1,0 +1,6 @@
+C:\Users\Ryan\Desktop\Freshman Year\EAE 2420\C# Projects\FunProject1\FunProject1\bin\Debug\FunProject1.exe.config
+C:\Users\Ryan\Desktop\Freshman Year\EAE 2420\C# Projects\FunProject1\FunProject1\bin\Debug\FunProject1.exe
+C:\Users\Ryan\Desktop\Freshman Year\EAE 2420\C# Projects\FunProject1\FunProject1\bin\Debug\FunProject1.pdb
+C:\Users\Ryan\Desktop\Freshman Year\EAE 2420\C# Projects\FunProject1\FunProject1\obj\Debug\FunProject1.csprojResolveAssemblyReference.cache
+C:\Users\Ryan\Desktop\Freshman Year\EAE 2420\C# Projects\FunProject1\FunProject1\obj\Debug\FunProject1.exe
+C:\Users\Ryan\Desktop\Freshman Year\EAE 2420\C# Projects\FunProject1\FunProject1\obj\Debug\FunProject1.pdb

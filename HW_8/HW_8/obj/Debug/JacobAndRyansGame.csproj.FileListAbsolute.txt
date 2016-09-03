@@ -1,0 +1,6 @@
+C:\Users\Ryan\Desktop\Freshman Year\EAE 2420\C# Projects\JacobAndRyansGame\JacobAndRyansGame\bin\Debug\JacobAndRyansGame.exe.config
+C:\Users\Ryan\Desktop\Freshman Year\EAE 2420\C# Projects\JacobAndRyansGame\JacobAndRyansGame\bin\Debug\JacobAndRyansGame.exe
+C:\Users\Ryan\Desktop\Freshman Year\EAE 2420\C# Projects\JacobAndRyansGame\JacobAndRyansGame\bin\Debug\JacobAndRyansGame.pdb
+C:\Users\Ryan\Desktop\Freshman Year\EAE 2420\C# Projects\JacobAndRyansGame\JacobAndRyansGame\obj\Debug\JacobAndRyansGame.csprojResolveAssemblyReference.cache
+C:\Users\Ryan\Desktop\Freshman Year\EAE 2420\C# Projects\JacobAndRyansGame\JacobAndRyansGame\obj\Debug\JacobAndRyansGame.exe
+C:\Users\Ryan\Desktop\Freshman Year\EAE 2420\C# Projects\JacobAndRyansGame\JacobAndRyansGame\obj\Debug\JacobAndRyansGame.pdb

@@ -1,0 +1,6 @@
+C:\Users\Ryan\Desktop\Freshman Year\EAE 2420\C# Projects\MidtermExamPrep\MidtermExamPrep\bin\Debug\MidtermExamPrep.exe.config
+C:\Users\Ryan\Desktop\Freshman Year\EAE 2420\C# Projects\MidtermExamPrep\MidtermExamPrep\bin\Debug\MidtermExamPrep.exe
+C:\Users\Ryan\Desktop\Freshman Year\EAE 2420\C# Projects\MidtermExamPrep\MidtermExamPrep\bin\Debug\MidtermExamPrep.pdb
+C:\Users\Ryan\Desktop\Freshman Year\EAE 2420\C# Projects\MidtermExamPrep\MidtermExamPrep\obj\Debug\MidtermExamPrep.csprojResolveAssemblyReference.cache
+C:\Users\Ryan\Desktop\Freshman Year\EAE 2420\C# Projects\MidtermExamPrep\MidtermExamPrep\obj\Debug\MidtermExamPrep.exe
+C:\Users\Ryan\Desktop\Freshman Year\EAE 2420\C# Projects\MidtermExamPrep\MidtermExamPrep\obj\Debug\MidtermExamPrep.pdb

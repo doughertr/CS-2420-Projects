@@ -1,0 +1,6 @@
+C:\Users\Ryan\Desktop\Freshman Year\EAE 2420\C# Projects\HW_4\HW_4\bin\Debug\HW_4.exe.config
+C:\Users\Ryan\Desktop\Freshman Year\EAE 2420\C# Projects\HW_4\HW_4\obj\Debug\HW_4.csprojResolveAssemblyReference.cache
+C:\Users\Ryan\Desktop\Freshman Year\EAE 2420\C# Projects\HW_4\HW_4\bin\Debug\HW_4.exe
+C:\Users\Ryan\Desktop\Freshman Year\EAE 2420\C# Projects\HW_4\HW_4\bin\Debug\HW_4.pdb
+C:\Users\Ryan\Desktop\Freshman Year\EAE 2420\C# Projects\HW_4\HW_4\obj\Debug\HW_4.exe
+C:\Users\Ryan\Desktop\Freshman Year\EAE 2420\C# Projects\HW_4\HW_4\obj\Debug\HW_4.pdb
